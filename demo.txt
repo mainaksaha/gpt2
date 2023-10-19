@@ -1,0 +1,71 @@
+import React, { useState } from 'react';
+
+function App() {
+    const [selectedPrompt, setSelectedPrompt] = useState('');
+    const [promptDetails, setPromptDetails] = useState('');
+    const [useCase, setUseCase] = useState('');
+    const [testCase, setTestCase] = useState('');
+    const [data, setData] = useState('');
+
+    // Example prompts for the dropdown
+    const prompts = [
+        { value: 'prompt1', description: 'Details for prompt 1' },
+        { value: 'prompt2', description: 'Details for prompt 2' },
+        // ... add more prompts as needed
+    ];
+
+    const handlePromptChange = (e) => {
+        const selected = prompts.find(prompt => prompt.value === e.target.value);
+        setSelectedPrompt(selected.value);
+        setPromptDetails(selected.description);
+    };
+
+    return (
+        <div style={{ display: 'flex', padding: '20px' }}>
+            <div style={{ marginRight: '20px', flex: 1 }}>
+                <div>
+                    <label>Select Prompt from This List</label>
+                    <select value={selectedPrompt} onChange={handlePromptChange}>
+                        {prompts.map(prompt => (
+                            <option key={prompt.value} value={prompt.value}>
+                                {prompt.value}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+                <textarea
+                    placeholder="Create Use Case"
+                    value={useCase}
+                    onChange={e => setUseCase(e.target.value)}
+                    style={{ width: '100%', marginTop: '20px' }}
+                ></textarea>
+                <button onClick={() => { /* logic for generating code */ }}>Generate Code</button>
+                <textarea
+                    placeholder="Generate Test Case"
+                    value={testCase}
+                    onChange={e => setTestCase(e.target.value)}
+                    style={{ width: '100%', marginTop: '20px' }}
+                ></textarea>
+            </div>
+            <textarea
+                placeholder="Add your Data Here"
+                value={data}
+                onChange={e => setData(e.target.value)}
+                style={{ flex: 2, marginLeft: '20px' }}
+            ></textarea>
+            <div style={{ flex: 1, marginLeft: '20px' }}>
+                <div>Result</div>
+                {/* Example output area */}
+                <div style={{ border: '1px solid #ccc', padding: '20px' }}>
+                    {/* Display the generated result here */}
+                </div>
+            </div>
+            <div style={{ marginTop: '20px', width: '100%' }}>
+                <label>Prompt Details:</label>
+                <p>{promptDetails}</p>
+            </div>
+        </div>
+    );
+}
+
+export default App;
