@@ -1,0 +1,44 @@
+{
+  "data_sources": [
+    {
+      "type": "azure_search",
+      "parameters": {
+        "endpoint": "'$search_endpoint'",
+        "semantic_configuration": "default",
+        "query_type": "vector",
+        "fields_mapping": {},
+        "in_scope": true,
+        "role_information": "You are an AI assistant that helps people find information.",
+        "filter": null,
+        "strictness": 3,
+        "top_n_documents": 5,
+        "authentication": {
+          "type": "api_key",
+          "key": "xx"
+        },
+        "embedding_dependency": {
+          "type": "deployment_name",
+          "deployment_name": "test-ada"
+        },
+        "key": "'$search_key'",
+        "indexName": "'$search_index'"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an AI assistant that helps people find information."
+    }
+  ],
+  "deployment": "test-chat",
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 800,
+  "stop": null,
+  "stream": true,
+  "frequency_penalty": 0,
+  "presence_penalty": 0,
+  "azureSearchEndpoint": "https://azureaisearch-mainak.search.windows.net",
+  "azureSearchKey": "***"
+}
