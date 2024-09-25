@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jira Entry Validator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Change Request Entry */
+        .cr-entry {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .cr-entry h2 {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .cr-entry p {
+            margin: 5px 0;
+        }
+
+        /* Content Layout */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        /* Bullet Points */
+        .bullet-points h2 {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .bullet-points ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Gauge Styles */
+        .gauge-container {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .gauge {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Gauge sectors */
+        .sector {
+            fill: none;
+            stroke-width: 10;
+        }
+
+        .sector.poor {
+            stroke: #e74c3c; /* Red */
+        }
+
+        .sector.average {
+            stroke: #f1c40f; /* Yellow */
+        }
+
+        .sector.good {
+            stroke: #2ecc71; /* Green */
+        }
+
+        /* Needle */
+        #needle {
+            stroke: #34495e;
+            stroke-width: 2;
+            transform-origin: 50% 100%;
+        }
+
+        /* Labels */
+        .gauge-labels text {
+            font-size: 5px;
+            fill: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jira Entry Validator</h1>
+
+        <!-- Change Request Entry -->
+        <div class="cr-entry">
+            <h2>Change Request Entry</h2>
+            <p><strong>ID:</strong> CR-12345</p>
+            <p><strong>Title:</strong> Implement New Authentication Module</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae arcu quis nulla sagittis accumsan.</p>
+            <p><strong>Assignee:</strong> John Doe</p>
+            <p><strong>Status:</strong> In Progress</p>
+        </div>
+
+        <div class="content">
+            <!-- Left Column: Bullet Points -->
+            <div class="left-column">
+                <div class="bullet-points">
+                    <h2>Points Covered</h2>
+                    <ul id="covered-points">
+                        <li>Summary is provided</li>
+                        <li>Description is detailed</li>
+                        <li>Assignee is set</li>
+                    </ul>
+                    <h2>Points Missing</h2>
+                    <ul id="missing-points">
+                        <li>Labels are missing</li>
+                        <li>Priority is not set</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Gauge -->
+            <div class="right-column">
+                <div class="gauge-container">
+                    <svg class="gauge" viewBox="0 0 100 57">
+                        <!-- Gauge Background -->
+                        <path d="M10,50 A40,40 0 0,1 90,50" stroke="#ecf0f1" stroke-width="10" fill="none"></path>
+                        <!-- Sectors -->
+                        <path class="sector poor" d="M10,50 A40,40 0 0,1 36,20"></path>
+                        <path class="sector average" d="M36,20 A40,40 0 0,1 64,20"></path>
+                        <path class="sector good" d="M64,20 A40,40 0 0,1 90,50"></path>
+                        <!-- Needle -->
+                        <line id="needle" x1="50" y1="50" x2="50" y2="15"></line>
+                        <!-- Labels -->
+                        <g class="gauge-labels">
+                            <text x="20" y="55" text-anchor="middle">Poor</text>
+                            <text x="50" y="55" text-anchor="middle">Average</text>
+                            <text x="80" y="55" text-anchor="middle">Good</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Quality score ranges from 0 to 100
+        let qualityScore = 35; // Adjust this value between 0 and 100
+
+        // Function to update the needle position based on the quality score
+        function updateNeedle(score) {
+            const needle = document.getElementById('needle');
+            // Map the score to an angle between -90 (left) and 90 (right)
+            let angle = (score / 100) * 180 - 90;
+            // Adjust the angle to be between -90 and 90 degrees
+            angle = Math.max(-90, Math.min(90, angle));
+            // Update the needle's transform attribute
+            needle.setAttribute('transform', `rotate(${angle},50,50)`);
+        }
+
+        // Set the needle position based on the quality score
+        updateNeedle(qualityScore);
+    </script>
+</body>
+</html>
