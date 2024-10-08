@@ -1,0 +1,101 @@
+name,age,location,salary,rent_paid,college_name,state,male_or_female,married_or_single
+Alice,47,Boston,90821,3499,University of Chicago,Illinois,Male,Married
+Jessica,44,Miami,76017,3714,Harvard,Florida,Female,Single
+Jessica,24,Miami,143993,1010,Columbia,Georgia,Female,Single
+Emily,31,Dallas,104710,1682,Stanford,Massachusetts,Female,Married
+Alice,33,Boston,72194,2452,UC Berkeley,Texas,Female,Married
+Michael,34,Boston,59740,2295,University of Chicago,Georgia,Male,Married
+Sarah,34,Boston,97815,2946,Stanford,California,Female,Single
+James,55,Denver,120108,3989,UC Berkeley,Massachusetts,Female,Single
+Emma,28,Dallas,119423,1987,NYU,Florida,Male,Married
+James,51,Chicago,76940,1524,UC Berkeley,Illinois,Female,Single
+John,39,New York,93574,1426,UCLA,New York,Female,Married
+Michael,59,Seattle,62244,2389,UCLA,Texas,Female,Married
+David,44,Houston,57886,2619,Harvard,Texas,Male,Single
+Alice,50,Denver,66674,2691,UCLA,Colorado,Female,Married
+John,33,Boston,99060,2096,Harvard,Florida,Male,Married
+Emma,23,Miami,143091,3932,MIT,Georgia,Male,Single
+John,22,Los Angeles,113627,1732,Yale,Pennsylvania,Male,Single
+David,23,New York,147423,1102,Yale,Georgia,Female,Single
+David,53,Boston,128110,3333,UCLA,Texas,Female,Single
+Emily,30,Denver,96999,3708,MIT,Texas,Male,Married
+Daniel,59,Miami,77550,1255,MIT,Florida,Male,Single
+David,27,New York,104765,1290,Harvard,Massachusetts,Female,Single
+John,58,Dallas,132171,3323,Princeton,New York,Female,Single
+Michael,45,Los Angeles,108196,3096,Princeton,Texas,Female,Single
+Daniel,24,Dallas,132657,3868,Princeton,Pennsylvania,Female,Married
+David,60,Los Angeles,108970,2675,University of Chicago,Colorado,Male,Married
+Sarah,59,Dallas,64243,1786,Yale,Texas,Female,Married
+Jessica,36,San Francisco,132561,1082,NYU,Pennsylvania,Male,Married
+Sarah,32,Houston,62352,2725,University of Chicago,Pennsylvania,Male,Married
+Jessica,37,New York,60903,1329,UC Berkeley,Florida,Female,Single
+Daniel,37,Miami,69695,3440,NYU,Florida,Female,Single
+Alice,60,Dallas,60174,3136,Princeton,Massachusetts,Female,Married
+Sarah,23,San Francisco,118304,2756,MIT,Pennsylvania,Female,Single
+Sarah,22,Denver,65543,2726,UCLA,New York,Female,Married
+Sarah,56,Miami,75856,3805,Harvard,New York,Male,Married
+James,46,Chicago,122045,1236,University of Chicago,Georgia,Female,Single
+John,26,Chicago,88682,2521,Princeton,Illinois,Male,Married
+Jessica,37,Seattle,80328,2385,Princeton,Texas,Male,Married
+Daniel,35,Los Angeles,140747,3959,Harvard,California,Male,Married
+Emily,30,Boston,129174,2038,UC Berkeley,Pennsylvania,Female,Married
+Emily,36,Dallas,64811,3010,NYU,Washington,Male,Single
+James,59,Seattle,48295,3245,University of Chicago,Massachusetts,Male,Married
+Emma,56,Boston,106327,2978,Columbia,Illinois,Male,Single
+Alice,57,Los Angeles,141832,1471,Harvard,Georgia,Male,Single
+Sarah,30,Los Angeles,132573,2831,University of Chicago,Washington,Male,Single
+James,53,Los Angeles,146428,996,UC Berkeley,Pennsylvania,Male,Single
+David,47,Boston,97430,1258,UC Berkeley,New York,Female,Married
+Emma,22,Los Angeles,84885,2922,University of Chicago,Illinois,Male,Single
+Daniel,58,Los Angeles,95175,2752,UCLA,Pennsylvania,Female,Single
+Daniel,34,Los Angeles,67685,2800,UCLA,Georgia,Male,Married
+Alice,58,Los Angeles,47493,2755,Stanford,Colorado,Female,Single
+David,55,Houston,106359,3850,UCLA,Illinois,Female,Married
+John,54,San Francisco,136331,3211,Yale,Pennsylvania,Male,Single
+Michael,30,Seattle,114027,1116,MIT,California,Female,Single
+James,25,Denver,122103,3347,Columbia,Florida,Male,Single
+James,34,Chicago,108433,1439,Stanford,New York,Male,Married
+Daniel,48,Denver,49859,3884,Yale,California,Male,Married
+Michael,29,Dallas,55938,1104,UC Berkeley,Texas,Female,Single
+Emily,33,Miami,128632,2501,NYU,Georgia,Female,Single
+Michael,25,Los Angeles,117677,2304,UCLA,Colorado,Male,Single
+David,48,San Francisco,63760,3996,University of Chicago,Colorado,Female,Married
+John,53,Denver,88928,1423,NYU,Colorado,Female,Married
+Daniel,46,Miami,53905,3158,MIT,Colorado,Male,Single
+James,57,Miami,76799,3081,Harvard,California,Female,Married
+Michael,36,San Francisco,119009,3230,UC Berkeley,Florida,Male,Married
+Sarah,49,Los Angeles,119950,2254,Columbia,Colorado,Male,Married
+Michael,37,Seattle,143800,3591,Columbia,Pennsylvania,Female,Married
+Daniel,45,Denver,100566,3952,Princeton,Georgia,Female,Single
+Michael,58,Los Angeles,102717,1053,Princeton,Illinois,Female,Married
+Jessica,49,Boston,135802,1883,Harvard,Pennsylvania,Male,Married
+Michael,49,Boston,97687,3156,Harvard,Colorado,Male,Married
+Daniel,35,Dallas,65950,3255,UCLA,Texas,Female,Single
+Sarah,23,San Francisco,76107,3090,UCLA,New York,Female,Single
+James,46,Dallas,129320,2280,NYU,Massachusetts,Female,Married
+Emma,58,Los Angeles,94795,1378,Stanford,Washington,Male,Single
+Michael,39,Dallas,58301,3354,UCLA,New York,Female,Single
+Alice,32,Houston,122706,1325,University of Chicago,Pennsylvania,Female,Single
+Sarah,25,Seattle,84987,1361,MIT,Massachusetts,Male,Married
+Sarah,46,Los Angeles,121838,3392,NYU,California,Female,Single
+Emily,35,Denver,89609,1579,University of Chicago,New York,Female,Single
+James,47,Boston,107122,3571,Stanford,Massachusetts,Male,Married
+Alice,42,Los Angeles,88719,1419,UC Berkeley,New York,Male,Married
+Daniel,39,Boston,51854,1694,Columbia,Washington,Male,Single
+Daniel,52,Denver,98691,2087,UC Berkeley,Texas,Male,Single
+Sarah,26,Chicago,117184,2393,University of Chicago,Illinois,Female,Single
+James,58,Chicago,69579,1906,Princeton,Colorado,Male,Single
+Emily,58,Miami,83452,1725,Stanford,Florida,Female,Married
+Sarah,30,San Francisco,138472,2334,MIT,Washington,Male,Single
+John,52,Chicago,141249,1390,Princeton,California,Male,Single
+Daniel,44,Denver,68805,2346,UCLA,California,Female,Married
+James,29,Seattle,88571,2924,NYU,Massachusetts,Female,Married
+John,51,San Francisco,99326,1149,University of Chicago,California,Female,Married
+Emily,30,Chicago,113721,2511,UCLA,Massachusetts,Female,Married
+Emma,51,Boston,143401,3432,Harvard,Georgia,Female,Married
+Daniel,44,Dallas,137539,3647,NYU,Washington,Female,Married
+Sarah,28,Seattle,45141,2915,University of Chicago,Illinois,Female,Married
+John,33,Houston,125026,1146,MIT,California,Male,Married
+Sarah,53,Miami,112995,2532,University of Chicago,Colorado,Male,Single
+Emma,39,Chicago,106599,1969,Princeton,Georgia,Female,Married
+Alice,25,San Francisco,75965,1145,Princeton,Massachusetts,Male,Single
